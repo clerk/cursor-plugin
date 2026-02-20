@@ -19,14 +19,6 @@ The Clerk plugin for [Cursor](https://cursor.com) gives Cursor the tools and ski
 | `clerk-webhooks` | Real-time events and data syncing |
 | `clerk-testing` | E2E testing with Playwright/Cypress |
 
-## Using with Claude Code
-
-For Claude Code users, install skills directly:
-
-```bash
-npx add-skill clerk/skills
-```
-
 ## Development
 
 This repo uses a git submodule for shared agent skills.
