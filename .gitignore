@@ -7,8 +7,12 @@
 .DS_Store
 *.swp
 *.swo
+.cursor/
 
 # Logs and temp
 *.log
 tmp/
 temp/
+
+# Dependencies
+node_modules/

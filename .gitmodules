@@ -1,0 +1,3 @@
+[submodule "submodules/skills"]
+	path = submodules/skills
+	url = https://github.com/clerk/skills.git
