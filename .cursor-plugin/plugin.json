@@ -1,0 +1,26 @@
+{
+  "name": "clerk",
+  "version": "0.1.0",
+  "description": "Clerk authentication toolkit for Cursor - setup guides, MCP server, and specialized skills for organizations, webhooks, testing, and more.",
+  "author": {
+    "name": "Clerk",
+    "email": "support@clerk.com",
+    "url": "https://clerk.com"
+  },
+  "keywords": [
+    "clerk",
+    "auth",
+    "authentication",
+    "nextjs",
+    "react",
+    "organizations",
+    "webhooks",
+    "b2b",
+    "saas",
+    "rbac",
+    "middleware",
+    "mcp"
+  ],
+  "logo": "assets/clerk-logo.svg",
+  "primaryColor": "#6C47FF"
+}
