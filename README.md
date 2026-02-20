@@ -1,34 +1,57 @@
-# Cursor plugin template
+# Clerk Plugin for Cursor
 
-Build and publish Cursor Marketplace plugins from a single repo.
+The Clerk plugin for [Cursor](https://cursor.com) gives Cursor the tools and skills needed to work effectively with Clerk authentication.
 
-Two starter plugins are included:
+## What's Included
 
-- **starter-simple**: rules and skills only
-- **starter-advanced**: rules, skills, agents, commands, hooks, MCP, and scripts
+- **MCP Server** - Remote connection to the [Clerk MCP server](https://mcp.clerk.dev) for SDK snippets, quickstart guides, and documentation
+- **Skills** - Agent skills from [clerk/skills](https://github.com/clerk/skills) for setup, custom UI, Next.js patterns, organizations, webhooks, and testing
 
-## Getting started
+## Skills
 
-[Use this template](https://github.com/cursor/plugin-template/generate) to create a new repository, then customize:
+| Skill | Purpose |
+|-------|---------|
+| `clerk` | Router - automatically routes to the right skill based on your task |
+| `clerk-setup` | Add Clerk to any framework (Next.js, React, Expo, Astro, etc.) |
+| `clerk-custom-ui` | Custom sign-in/sign-up flows and appearance |
+| `clerk-nextjs-patterns` | Advanced Next.js patterns - middleware, Server Actions, caching |
+| `clerk-orgs` | Multi-tenant B2B organizations with RBAC |
+| `clerk-webhooks` | Real-time events and data syncing |
+| `clerk-testing` | E2E testing with Playwright/Cypress |
 
-1. `.cursor-plugin/marketplace.json`: set marketplace `name`, `owner`, and `metadata`.
-2. `plugins/*/.cursor-plugin/plugin.json`: set `name` (lowercase kebab-case), `displayName`, `author`, `description`, `keywords`, `license`, and `version`.
-3. Replace placeholder rules, skills, agents, commands, hooks, scripts, and logos.
+## Using with Claude Code
 
-To add more plugins, see `docs/add-a-plugin.md`.
+For Claude Code users, install skills directly:
 
-## Single plugin vs multi-plugin
+```bash
+npx add-skill clerk/skills
+```
 
-This template defaults to **multi-plugin** (multiple plugins in one repo).
+## Development
 
-For a **single plugin**, move your plugin folder contents to the repository root, keep one `.cursor-plugin/plugin.json`, and remove `.cursor-plugin/marketplace.json`.
+This repo uses a git submodule for shared agent skills.
 
-## Submission checklist
+After cloning, initialize the submodule:
 
-- Each plugin has a valid `.cursor-plugin/plugin.json`.
-- Plugin names are unique, lowercase, and kebab-case.
-- `.cursor-plugin/marketplace.json` entries map to real plugin folders.
-- All frontmatter metadata is present in rule, skill, agent, and command files.
-- Logos are committed and referenced with relative paths.
-- `node scripts/validate-template.mjs` passes.
-- Repository link is ready for submission to the Cursor team (Slack or `kniparko@anysphere.com`).
+```bash
+git submodule update --init --recursive
+```
+
+To update the submodule:
+
+```bash
+git submodule update --remote submodules/skills
+git add submodules/skills
+git commit -m "chore: update skills submodule"
+```
+
+## Resources
+
+- [Clerk Docs](https://clerk.com/docs)
+- [Dashboard](https://dashboard.clerk.com)
+- [Discord](https://clerk.com/discord)
+- [clerk/skills](https://github.com/clerk/skills) - Skills source repository
+
+## License
+
+MIT
