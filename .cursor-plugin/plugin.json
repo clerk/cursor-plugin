@@ -4,7 +4,7 @@
   "description": "Clerk authentication toolkit for Cursor - setup guides, MCP server, and specialized skills for organizations, webhooks, testing, and more.",
   "author": {
     "name": "Clerk",
-    "email": "support@clerk.com",
+    "email": "ai@clerk.dev",
     "url": "https://clerk.com"
   },
   "keywords": [
@@ -21,6 +21,7 @@
     "middleware",
     "mcp"
   ],
+  "license": "MIT",
   "logo": "assets/clerk-logo.svg",
   "primaryColor": "#6C47FF"
 }
