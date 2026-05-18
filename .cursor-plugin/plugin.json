@@ -1,19 +1,26 @@
 {
   "name": "clerk",
-  "version": "0.1.0",
-  "description": "Clerk authentication toolkit for Cursor - setup guides, MCP server, and specialized skills for organizations, webhooks, testing, and more.",
+  "version": "0.2.0",
+  "description": "Clerk authentication toolkit for Cursor - setup guides, MCP server, and specialized skills for frameworks, mobile apps, organizations, billing, webhooks, testing, and more.",
   "author": {
     "name": "Clerk",
-    "email": "ai@clerk.dev",
-    "url": "https://clerk.com"
+    "email": "ai@clerk.dev"
   },
+  "homepage": "https://clerk.com",
   "keywords": [
     "clerk",
     "auth",
     "authentication",
     "nextjs",
     "react",
+    "vue",
+    "nuxt",
+    "astro",
+    "expo",
+    "android",
+    "ios",
     "organizations",
+    "billing",
     "webhooks",
     "b2b",
     "saas",
@@ -23,5 +30,26 @@
   ],
   "license": "MIT",
   "logo": "assets/clerk-logo.svg",
-  "primaryColor": "#6C47FF"
+  "skills": [
+    "submodules/skills/skills/core/clerk",
+    "submodules/skills/skills/core/clerk-backend-api",
+    "submodules/skills/skills/core/clerk-custom-ui",
+    "submodules/skills/skills/core/clerk-setup",
+    "submodules/skills/skills/features/clerk-billing",
+    "submodules/skills/skills/features/clerk-orgs",
+    "submodules/skills/skills/features/clerk-testing",
+    "submodules/skills/skills/features/clerk-webhooks",
+    "submodules/skills/skills/frameworks/clerk-astro-patterns",
+    "submodules/skills/skills/frameworks/clerk-chrome-extension-patterns",
+    "submodules/skills/skills/frameworks/clerk-expo-patterns",
+    "submodules/skills/skills/frameworks/clerk-nextjs-patterns",
+    "submodules/skills/skills/frameworks/clerk-nuxt-patterns",
+    "submodules/skills/skills/frameworks/clerk-react-patterns",
+    "submodules/skills/skills/frameworks/clerk-react-router-patterns",
+    "submodules/skills/skills/frameworks/clerk-tanstack-patterns",
+    "submodules/skills/skills/frameworks/clerk-vue-patterns",
+    "submodules/skills/skills/mobile/clerk-android",
+    "submodules/skills/skills/mobile/clerk-expo",
+    "submodules/skills/skills/mobile/clerk-swift"
+  ]
 }
