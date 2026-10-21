@@ -4,7 +4,7 @@ The Clerk plugin for [Cursor](https://cursor.com) gives Cursor the tools and ski
 
 ## What's Included
 
-- **MCP Server** - Remote connection to the [Clerk MCP server](https://mcp.clerk.dev) for SDK snippets, quickstart guides, and documentation
+- **MCP Server** - Remote connection to the [Clerk MCP server](https://mcp.clerk.com) for SDK snippets, quickstart guides, and documentation
 - **Skills** - Agent skills from [clerk/skills](https://github.com/clerk/skills) for setup, custom UI, framework patterns, mobile SDKs, organizations, billing, webhooks, and testing
 
 ## Skills
