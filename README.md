@@ -4,8 +4,10 @@ The Clerk plugin for [Cursor](https://cursor.com) gives Cursor the tools and ski
 
 ## What's Included
 
-- **MCP Server** - Remote connection to the [Clerk MCP server](https://mcp.clerk.com) for SDK snippets, quickstart guides, and documentation
+- **MCP Server** - Remote connection to the Clerk MCP server to create and inspect applications, create and update users and their metadata, list organizations and inspect memberships, configure instances, and set up production with domain and DNS checks. Also includes SDK snippets and quickstart guides.
 - **Skills** - Agent skills from [clerk/skills](https://github.com/clerk/skills) for setup, custom UI, framework patterns, mobile SDKs, organizations, billing, webhooks, and testing
+
+The MCP server requires OAuth sign-in with your Clerk account. In Cursor, authenticate the server through your browser, select a workspace, and approve the requested permissions. See the [Clerk MCP guide](https://clerk.com/docs/guides/ai/mcp/clerk-mcp-server) for setup and the maintained tool catalog.
 
 ## Skills
 
